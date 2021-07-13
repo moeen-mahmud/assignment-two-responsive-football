@@ -22,15 +22,19 @@ a {
 
 .hero-section {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
+  padding-top: 100px;
+  padding-bottom: 86px;
   background-color: #2d25a0;
 }
 
-.wrapper {
-  width: 485px;
-  padding-top: 100px;
-  padding-bottom: 86px;
+.wrapper-content {
+  margin: 0 102px 0 156px;
+}
+
+.wrapper-image {
+  margin: 0 137px 0 0;
 }
 
 .heading-title {
@@ -100,7 +104,7 @@ a {
   color: #6c6c6c;
 }
 
-/* Highlights Section */
+/* Highlights Section Style*/
 
 .highlights-section {
   display: flex;
@@ -136,4 +140,32 @@ a {
 .highlight-image img {
   width: 567px;
   height: 427px;
+}
+
+/* Footer Section Style */
+
+.footer-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  text-align: center;
+  margin-top: 158px;
+  margin-bottom: 63px;
+}
+.social-links {
+  margin: 0 7px 0 7px;
+  color: #969bab;
+  background-color: rgba(11, 13, 23, 0.1);
+  font-size: 18px;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0px 4px 0px 4px;
+  border-radius: 50%;
+}
+
+.footer-image img {
+  width: 484px;
+  height: 110px;
 }
