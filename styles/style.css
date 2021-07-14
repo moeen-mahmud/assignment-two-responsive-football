@@ -162,6 +162,8 @@ a {
   display: flex;
   flex-direction: column;
   border-radius: 10px;
+  margin-bottom: 40px;
+  margin-right: 40px;
   /* padding: 30px 60px; */
 }
 
@@ -169,7 +171,7 @@ a {
   font-size: 40px;
   font-weight: 700;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 20px;
 }
 
 .login-form input {
