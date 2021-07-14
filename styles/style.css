@@ -61,6 +61,7 @@ li {
   width: 100%;
   padding: 30px;
   background-color: #2d25a0;
+  z-index: 5;
 }
 
 .nav-items ul {
