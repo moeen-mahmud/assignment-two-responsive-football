@@ -4,11 +4,16 @@
 
 /* Global Styles */
 
-body {
+html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
   font-family: "Poppins", sans-serif;
 }
 
@@ -16,6 +21,47 @@ a {
   text-decoration: none;
 }
 
+li {
+  list-style: none;
+}
+
+/* Header Section Stuling */
+
+.nav-bar {
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 30px;
+  background-color: #2d25a0;
+}
+
+/* .nav-items {
+} */
+
+.nav-items ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list {
+  color: #ffffff;
+  font-size: 16px;
+  margin-left: 18px;
+  margin-right: 18px;
+  padding: 10px;
+  transition: all 0.4s ease;
+}
+
+.nav-list:hover {
+  background-color: #e02c6d;
+}
+
+.login-button {
+  margin-right: 18px;
+}
 /* Main Section Styling */
 
 /* Hero Section Style */
@@ -24,12 +70,13 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 100px;
+  padding-top: 150px;
   padding-bottom: 86px;
   background-color: #2d25a0;
 }
 
 .wrapper-content {
+  width: 485px;
   margin: 0 102px 0 156px;
 }
 
@@ -51,6 +98,16 @@ a {
   background-color: #e02c6d;
   padding: 10px 24px;
   cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.btn:hover {
+  background-color: #2d25a0;
+  box-shadow: 0px 0px 40px rgba(224, 44, 110, 0.322);
+}
+
+.btn-alt:hover {
+  background-color: #e02c6d;
 }
 
 .icon {
@@ -60,11 +117,16 @@ a {
 .head-image img {
   width: 555px;
   height: 438px;
+  transition: all 0.4s ease;
+}
+
+.head-image img:hover {
+  transform: rotate(20deg);
 }
 
 /* Player Profile Section Style */
 
-.player-profile {
+.player-section {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -79,13 +141,18 @@ a {
 
 .player-card {
   width: 330px;
-
   box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
 }
 
 .player-info .player-pic {
   width: 300px;
   height: 256px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.player-pic:hover {
+  transform: scale(1.1);
 }
 
 .player-info {
@@ -163,8 +230,6 @@ a {
   flex-direction: column;
   border-radius: 10px;
   margin-bottom: 40px;
-  margin-right: 40px;
-  /* padding: 30px 60px; */
 }
 
 .form-title {
@@ -190,6 +255,78 @@ a {
 .btn-alt {
   background-color: #2d25a0;
 }
+
+/* Price Section Style */
+
+.price-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+}
+
+.price-content {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.price-head {
+  margin: 0;
+  color: #18191f;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.price-sub {
+  color: #6c6c6c;
+}
+
+.price-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.price-card {
+  padding: 20px 50px;
+  text-align: center;
+  border-bottom: 3px solid #2d25a0;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+
+.price-info {
+  padding: 0;
+  margin: 20px 10px;
+}
+
+.price-title {
+  color: #18191f;
+  font-size: 40px;
+  margin: 0;
+}
+
+.price-value {
+  font-size: 20px;
+  font-weight: 500;
+  background-color: rgba(45, 37, 160, 0.822);
+  color: #ffffff;
+  padding: 10px 0;
+}
+
+.features {
+  margin-bottom: 40px;
+}
+
+.features ul {
+  padding: 0;
+}
+
+.features li {
+  color: #6c6c6c;
+  padding: 10px 0;
+}
+
 /* Footer Section Style */
 
 .footer-section {
@@ -211,9 +348,170 @@ a {
   vertical-align: middle;
   padding: 0px 4px 0px 4px;
   border-radius: 50%;
+  transition: all 0.4s ease;
+}
+
+.social-links:hover {
+  color: #e02c6d;
 }
 
 .footer-image img {
   width: 484px;
   height: 110px;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 688px) {
+  .nav-bar {
+    display: none;
+  }
+
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+    padding: 61px 15px 61px 15px;
+  }
+
+  .player-section {
+    margin-top: 47px;
+  }
+
+  .wrapper-content {
+    width: 278px;
+    margin: 0 0 50px 0;
+  }
+
+  .wrapper-image {
+    margin: 0;
+  }
+
+  .heading-title {
+    font-size: 36px;
+    margin: 0 0 30px 0;
+  }
+  .head-image img {
+    width: 330px;
+    height: 260px;
+  }
+
+  .player-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .highlights-section {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0 15px 0 15px;
+    margin-top: 60px;
+  }
+
+  .highlight-title {
+    font-size: 30px;
+  }
+
+  .highlight-content {
+    margin: 0;
+  }
+
+  .highlight-article {
+    margin-bottom: 24px;
+    padding: 0;
+  }
+
+  .highlight-image {
+    margin: 29px 0 0 0;
+  }
+
+  .highlight-image img {
+    width: 328px;
+    height: 248px;
+  }
+
+  .login-section {
+    margin: 65px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .login-image img {
+    width: 328px;
+    height: 248px;
+  }
+
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    margin-bottom: 40px;
+  }
+
+  .form-title {
+    font-size: 30px;
+    margin: 30px 0 10px 0;
+  }
+
+  .login-form input {
+    width: 300px;
+    font-size: 16px;
+    margin: 20px 0 0 0;
+  }
+
+  .login-form button {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .price-section {
+    margin: 50px 0 20px 0;
+    padding: 0;
+  }
+
+  .price-content {
+    margin-bottom: 20px;
+  }
+
+  .price-head {
+    font-size: 26px;
+  }
+
+  .price-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .price-info {
+    padding: 0;
+    margin: 20px 10px;
+  }
+
+  .price-title {
+    font-size: 30px;
+  }
+
+  .price-value {
+    font-size: 16px;
+  }
+
+  .features {
+    margin: 0 0 20px 0;
+  }
+
+  /* Footer Section Style */
+
+  .footer-section {
+    margin: 40px 0 80px 0;
+  }
+
+  .footer-image img {
+    width: 200px;
+    height: 50px;
+  }
 }
