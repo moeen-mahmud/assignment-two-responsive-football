@@ -13,6 +13,7 @@ This is a solution to the [Responsive Football Website - An assignment by Progra
 ### What I learned
 
 - Here I follow the raw figma file as much as possible. In media queries, I learn a lot and tweking some points and discover the breakpoints.
+- Here I use some transition effect on the player's photo gallery. Though that was not a requirement. But that was fun, and I learn a lot.
 
 ## Author
 
